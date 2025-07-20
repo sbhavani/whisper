@@ -1,0 +1,25 @@
+# Requirements for CHiME-6 dataset preparation
+# Install with: pip install -r requirements_chime6.txt
+
+# Core dependencies (usually included with Python)
+# urllib.request - for downloading files
+# json - for JSON handling
+# pathlib - for path operations
+# subprocess - for running external commands
+# shutil - for file operations
+# logging - for logging
+# argparse - for command line parsing
+# glob - for file pattern matching
+# zipfile - for extracting zip files
+# tarfile - for extracting tar files
+
+# No additional pip packages required for basic functionality
+# The script uses only Python standard library modules
+
+# Optional: For enhanced audio processing (if needed in future)
+# librosa>=0.8.0
+# soundfile>=0.10.0
+# numpy>=1.19.0
+
+# Optional: For progress bars during processing
+# tqdm>=4.50.0

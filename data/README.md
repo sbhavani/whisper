@@ -43,6 +43,18 @@ We used the 231 interviews from [CORAAL (v. 2021.07)](https://oraal.uoregon.edu/
 
 We downloaded the [CHiME-5 dataset](https://spandh.dcs.shef.ac.uk//chime_challenge/CHiME5/download.html) and followed the stage 0 of the [s5_track1 recipe](https://github.com/kaldi-asr/kaldi/tree/master/egs/chime6/s5_track1) to create the CHiME-6 dataset which fixes synchronization. We then used the binaural recordings (`*_P??.wav`) and the corresponding transcripts.
 
+**Automated Preparation**: We provide a script to automate the CHiME-6 dataset preparation process:
+
+```bash
+# Using the shell wrapper (recommended)
+./prepare_chime6.sh -i /path/to/CHiME5 -o /path/to/output -v
+
+# Or using Python directly
+python prepare_chime6_dataset.py --chime5_path /path/to/CHiME5 --output_dir /path/to/output --verbose
+```
+
+See [CHiME6_PREPARATION.md](CHiME6_PREPARATION.md) for detailed instructions and requirements.
+
 ### AMI-IHM, AMI-SDM1
 
 We preprocessed the [AMI Corpus](https://groups.inf.ed.ac.uk/ami/corpus/overview.shtml) by following the stage 0 and 2 of the [s5b recipe](https://github.com/kaldi-asr/kaldi/tree/master/egs/ami/s5b).
